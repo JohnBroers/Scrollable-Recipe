@@ -1,0 +1,796 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900|Indie+Flower|Coming+Soon|Handlee);
+
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	overflow-x: hidden;
+}
+
+body { 
+	overflow: hidden; 
+	background-color: #daebf6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Lato';	
+	text-transform: uppercase;
+	font-style: bold;
+}
+
+section {
+	min-height: 100vh;
+	background-color: #B3ECFF;
+	padding: 4em 15em 0;
+}
+
+#house {
+	position: fixed;
+	left: 0;
+	width: 100%;
+	z-index: 100;
+}
+
+section h1 {
+	text-align: center;
+	color: rgb(9, 49, 74);;
+	font-size: 4em;
+	font-weight: 900;
+	margin-bottom: .2em;
+	position: relative;
+	z-index: 999;
+	padding-top: 10%;
+	font-family: 'Handlee', cursive;
+}
+
+section p {
+	font-family: 'Coming Soon', cursive;
+	font-size: 1.1em;
+	line-height: 27px;
+	font-weight: 300;
+	position: relative;
+	text-align: center;
+	z-index: 999;
+}
+
+
+.clouds {
+	position: absolute;
+	z-index: 1;
+	overflow: visible;
+}
+
+#cloud {
+	background: url('img/cloud.png') no-repeat;
+	width: 154px;
+	height: 90px;
+}
+
+.x1 {
+	-webkit-animation: moveclouds 42s linear infinite;
+	-moz-animation: moveclouds 42s linear infinite;
+	-o-animation: moveclouds 42s linear infinite;
+	animation: moveclouds 42s linear infinite;
+}
+
+.x2 {
+	top: -120px;
+	position: relative;
+	-webkit-animation: moveclouds 35s linear infinite;
+	-moz-animation: moveclouds 35s linear infinite;
+	animation: moveclouds 35s linear infinite;
+
+	-webkit-animation-delay: -10s;
+	-moz-animation-delay: -10s;
+	animation-delay: -10s;
+
+	-webkit-transform: scale(.5);
+	-moz-transform: scale(.5);
+	transform: scale(.5);
+}
+
+.x3 {
+	top: -130px;
+	position: relative;
+	-webkit-animation: moveclouds 25s linear infinite;
+	-moz-animation: moveclouds 25s linear infinite;
+	animation: moveclouds 25s linear infinite;
+
+	-webkit-animation-delay: -9s;
+	-moz-animation-delay: -9s;
+	animation-delay: -9s;
+
+	-webkit-transform: scale(.7);
+	-moz-transform: scale(.7);
+	transform: scale(.7);
+}
+
+
+@-webkit-keyframes moveclouds {
+	0% {
+		margin-left: 1000px;
+	}
+	100% {
+		margin-left: -1000px;
+	}
+}
+
+@-moz-keyframes moveclouds {
+	0% {
+		margin-left: 1000px;
+	}
+	100% {
+		margin-left: -1000px;
+	}
+}
+
+@keyframes moveclouds {
+	0% {
+		margin-left: 1000px;
+	}
+	100% {
+		margin-left: -1000px;
+	}
+}
+
+.desk {
+	width: 80%;
+	background-color: rgb(79, 28, 16);
+	z-index: 999;
+	position: fixed;
+	bottom: -50px;
+	left: 50%;
+	right: 50%;
+	margin-left: -40%;
+}
+
+#chef {
+	position: fixed;
+	z-index: 993;
+	width: 140px;
+}
+
+#chef2 {
+	position: fixed;
+	z-index: 993;
+	width: 100px;
+}
+
+.progress {
+	position: fixed;
+	z-index: 100;
+	top: 10px;
+	left: 0;
+	-webkit-transform-origin: -100% -100%;
+	-moz-transform-origin: -100% -100%;
+	transform-origin: -100% -100%;
+}
+
+.bar {
+	background-color: #fde23e;
+	position: relative;
+	padding: 10px 15px;
+	top: 10px;
+	z-index: 100;
+	border-right: 2px solid #CAB21F;
+}
+
+.bar h2 {
+	color: #73532e;
+}
+
+.boodschappenlijst {
+	font-family: 'Indie Flower', cursive;
+	width: 80%;
+	background-color: white;
+	padding: 20px 15px 100px;
+	position: relative;
+	line-height: 20px;
+	background: #fff;
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(#d9eaf3), color-stop(4%, #fff)) 0 4px;
+	background: -webkit-linear-gradient(top, #d9eaf3 0%, #fff 8%) 0 4px;
+	background: -moz-linear-gradient(top, #d9eaf3 0%, #fff 8%) 0 4px;
+	background: -ms-linear-gradient(top, #d9eaf3 0%, #fff 8%) 0 4px;
+	background: -o-linear-gradient(top, #d9eaf3 0%, #fff 8%) 0 4px;
+	background: linear-gradient(top, #d9eaf3 0%, #fff 8%) 0 4px;
+	-webkit-background-size: 100% 20px;
+	-moz-background-size: 100% 20px;
+	-ms-background-size: 100% 20px;
+	-o-background-size: 100% 20px;
+	background-size: 100% 20px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	-webkit-box-shadow: 2px 2px 10px rgba(0,0,0,.1);
+	-moz-box-shadow: 2px 2px 10px rgba(0,0,0,.1);
+	box-shadow: 2px 2px 10px rgba(0,0,0,.1);
+	margin-bottom: 10px;
+}
+
+.boodschappenlijst li {
+	padding: 8px 0;
+	font-size: 15px;
+}
+
+.bladerdeeg.one {
+	position: fixed;
+	z-index: 110;
+	bottom: 150px;
+	width: 100px;
+	background-color: rgb(197, 100, 35);
+}
+
+.bladerdeeg.two {
+	position: fixed;
+	z-index: 100;
+	bottom: 160px;
+	width: 100px;
+	background-color: rgb(184, 88, 24);
+}
+
+.roller {
+	position: fixed;
+	z-index: 200;
+	width: 80px;
+	height: 80px;
+	background-color: rgb(121, 68, 11);
+	border-radius: 100%;
+	bottom: 150px;
+	border: 27px solid rgb(150, 98, 42);
+}
+
+.textwolk {
+	position: fixed;
+	overflow: visible;
+	z-index: 200;
+	display: table;
+	top: 50px;
+	width: 380px;
+	height: 120px;
+	padding: 16px 50px;
+	background: #FFFFFF;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	border: #3c4347 solid 5px;
+}
+
+.textwolk.uitlegDeeg:after {
+	content: '';
+	position: absolute;
+	border-style: solid;
+	border-width: 21px 0 21px 15px;
+	border-color: transparent #FFFFFF;
+	display: block;
+	width: 0;
+	z-index: 1;
+	right: -15px;
+	top: 53px;
+}
+
+.textwolk.uitlegDeeg:before {
+	content: '';
+	position: absolute;
+	border-style: solid;
+	border-width: 25px 0 25px 19px;
+	border-color: transparent #3c4347;
+	display: block;
+	width: 0;
+	z-index: 0;
+	right: -24px;
+	top: 49px;
+}
+
+.textwolk p {
+	font-family: 'Coming Soon', cursive;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.textwolkbegin {
+	width: 450px;
+	height: 150px;
+	bottom: 430px;
+	right: 50%;
+	left: 50%;
+	margin-left: -225px;
+	padding: 16px 20px;
+	position: fixed;
+	overflow: visible;
+	z-index: 200;
+	display: table;
+	background: #FFFFFF;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	border: #3c4347 solid 5px;
+}
+
+.textwolkbegin.uitlegDeeg:after {
+	content: '';
+	position: absolute;
+	border-style: solid;
+	border-width: 21px 0 21px 15px;
+	border-color: transparent #FFFFFF;
+	display: block;
+	width: 0;
+	z-index: 1;
+	right: -15px;
+	top: 53px;
+}
+
+.textwolkbegin.uitlegDeeg:before {
+	content: '';
+	position: absolute;
+	border-style: solid;
+	border-width: 25px 0 25px 19px;
+	border-color: transparent #3c4347;
+	display: block;
+	width: 0;
+	z-index: 0;
+	right: -24px;
+	top: 49px;
+}
+
+.textwolkbegin p {
+	font-family: 'Coming Soon', cursive;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+span.redline {
+	height: 2px;
+	background-color: red;
+	position: relative;
+	display: block;
+	top: -20px;
+}
+
+.fork {
+	position: fixed;
+	z-index: 99999;
+	background-color: gray;
+	width: 6px;
+	border-radius: 3px;
+	height: 50px;
+	left: 650px;
+	bottom: 200px;
+	overflow: visible;
+}
+
+.fork .spike {
+	position: relative;
+	display: block;
+	width: 3px;
+	height: 15px;
+	background-color: gray;
+}
+
+.halfcircle {
+	position: relative;
+	display: block;
+	width: 13px;
+	height: 5px;
+	background-color: gray;
+	top: 48px;
+	left: -3px;
+	border-radius: 3px;
+}
+
+.s1 {
+	left: -3px;
+	top: 47px;
+}
+.s2 {
+	left: 2px;
+	top: 32px;
+}
+.s3 {
+	left: 7px;
+	top: 17px;
+}
+
+.knife {
+	position: fixed;
+	z-index: 99999;
+	background-color: rgb(115, 115, 115);;
+	width: 6px;
+	height: 40px;
+	left: 650px;
+	bottom: 200px;
+	overflow: visible;
+}
+
+.sharpknife {
+	position: relative;
+	display: block;
+	background-color: gray;
+	top: 40px;
+	border-radius: 0 0 100% 0;
+	left: 0;
+	width: 6px;
+	height: 16px;
+}
+
+.knifecut {
+	position: fixed;
+	bottom: 150px;
+	left: 620px;
+	z-index: 998;
+	height: 10px;
+	width: 140px;
+	background-color: transparent;
+	overflow: visible;
+}
+
+.knifecut > span {
+	position: relative;
+	width: 5px;
+	background-color: #daebf6;
+	display: block;
+}
+
+.cut1 {
+	left: 24px;
+}
+
+.cut2 {
+	left: 64px;
+	top: -10px;
+}
+
+.cut3 {
+	left: 98px;
+	top: -20px;
+}
+
+.oven {
+	position: fixed;
+	z-index: 998;
+	height: 150px;
+	width: 150px;
+	left: 300px;
+	background-color: rgb(48, 48, 48);
+	border-radius: 6px 0 0 6px;
+	overflow: visible;
+	box-shadow: 4px 1px 15px -7px orangered;
+	display: table;
+}
+
+.oven p {
+	color: white;
+	font-weight: 500;
+	font-family: 'Coming Soon', cursive;
+	display: table-cell;
+	vertical-align: middle;
+	position: relative;
+}
+
+span.door {
+	height: 150px;
+	width: 10px;
+	background-color: gray;
+	position: relative;
+	display: block;
+	left: 6px;
+}
+
+.timer:before {
+	content: ' ';
+	position: relative;
+	top: 4px;
+	margin-right: 5px;
+	display: inline-block;
+	background: url('img/timer.png') no-repeat;
+	background-size: 20px;
+	width: 20px;
+	height: 20px;
+}
+
+.fornuis {
+	position: fixed;
+	display: block;
+	z-index: 998;
+	height: 5px;
+	width: 150px;
+	left: 850px;
+	background-color: orange;
+	border-radius: 3px 3px 0 0;
+}
+
+.pan {
+	position: fixed;
+	display: block;
+	z-index: 9998;
+	height: 50px;
+	width: 80px;
+	left: 870px;
+	bottom: 155px;
+	background-color: lightgray;
+	overflow: visible;
+	border-radius: 0 0 8px 8px;
+	box-shadow: -2px -6px 13px rgba(0, 0, 0, 0.22) inset;
+}
+
+.pan .steel {
+	position: relative;
+	display: block;
+	width: 60px;
+	height: 8px;
+	background-color: gray;
+	left: 79px;
+	top: 5px;
+}
+
+.bowl {
+	position: fixed;
+	display: block;
+	z-index: 998;
+	height: 50px;
+	width: 100px;
+	left: 580px;
+	bottom: 155px;
+	background-color: rgba(63, 127, 199, 1);
+	border-radius: 10px 8px 100% 100% / 63px;
+	box-shadow: -5px -5px 5px rgba(0, 0, 0, 0.02) inset;
+	border-top: 2px solid rgba(0, 0, 0, 0.13);
+}
+
+.milk {
+	position: fixed;
+	display: block;
+	z-index: 998;
+	height: 50px;
+	width: 25px;
+	right: 870px;
+	bottom: 150px;
+	border: 2px solid gray;
+	border-top: 0;
+	overflow: visible;
+}
+.melkinhoud {
+	position: relative;
+	background-color: white;
+	display: inline-block;
+	width: 21px;
+	height: 40px;
+	top: 8px;
+}
+
+.sugar {
+	position: fixed;
+	display: block;
+	z-index: 998;
+	height: 20px;
+	width: 50px;
+	right: 830px;
+	bottom: 150px;
+	border: 2px solid gray;
+	border-top: 0;
+	overflow: visible;
+	border-radius: 0 0 10px 10px;
+}
+
+.suikerinhoud {
+	position: relative;
+	background-color: white;
+	display: inline-block;
+	width: 46px;
+	height: 10px;
+	top: 4px;
+	border-radius: 0 0 10px 10px;
+}
+
+.bloem {
+	position: fixed;
+	display: block;
+	z-index: 998;
+	height: 15px;
+	width: 20px;
+	right: 905px;
+	bottom: 150px;
+	border: 2px solid gray;
+	border-top: 0;
+	overflow: visible;
+	border-radius: 0 0 10px 10px;
+}
+
+.bloeminhoud {
+	position: relative;
+	background-color: rgb(242, 230, 204);
+	display: inline-block;
+	width: 16px;
+	height: 10px;
+	top: -3px;
+	border-radius: 0 0 5px 5px;
+}
+
+.ei {
+	position: fixed;
+	display: block;
+	z-index: 998;
+	height: 20px;
+	width: 40px;
+	right: 930px;
+	bottom: 150px;
+	border: 2px solid gray;
+	border-top: 0;
+	overflow: visible;
+	border-radius: 0 0 10px 10px;
+}
+
+.eiinhoud {
+	position: relative;
+	background-color: orange;
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	top: 2px;
+	left: 4px;
+	border-radius: 100%;
+	box-shadow: -2px -2px 4px rgba(0, 0, 0, 0.2) inset;
+}
+
+.ei2 {
+	left: 11px;
+}
+
+.ei3 {
+	left: 13px;
+	top: -13px;
+}
+.ei4 {
+	left: 2px;
+	top: -21px;
+}
+
+.slagroom {
+	position: fixed;
+	display: block;
+	z-index: 998;
+	height: 35px;
+	width: 20px;
+	right: 800px;
+	bottom: 150px;
+	border: 2px solid gray;
+	border-top: 0;
+	overflow: visible;
+}
+.slagroominhoud {
+	position: relative;
+	background-color: white;
+	display: inline-block;
+	width: 16px;
+	height: 25px;
+	top: 8px;
+}
+
+.garde {
+	position: fixed;
+	display: block;
+	z-index: 598;
+	height: 38px;
+	width: 7px;
+	right: 589px;
+	bottom: 187px;
+	background-color: brown;
+	overflow: visible;
+}
+
+span.klepel {
+	position: relative;
+	display: block;
+	width: 13px;
+	height: 18px;
+	border-radius: 100%;
+	background-color: brown;
+	top: 34px;
+	left: -3px;
+}
+
+.poeder {
+	position: fixed;
+	display: block;
+	z-index: 998;
+	height: 20px;
+	width: 40px;
+	right: 830px;
+	bottom: 150px;
+	border: 2px solid gray;
+	border-top: 0;
+	overflow: visible;
+	border-radius: 0 0 5px 5px;
+}
+
+.poederinhoud {
+	position: relative;
+	background-color: white;
+	display: inline-block;
+	width: 36px;
+	height: 15px;
+	top: 4px;
+	border-radius: 0 0 5px 5px;
+}
+
+.sap {
+	position: fixed;
+	display: block;
+	z-index: 999;
+	height: 20px;
+	width: 40px;
+	right: 730px;
+	bottom: 150px;
+	border: 2px solid gray;
+	border-top: 0;
+	overflow: visible;
+	border-radius: 0 0 5px 5px;
+}
+
+.sapinhoud {
+	position: relative;
+	background-color: purple;
+	display: inline-block;
+	width: 36px;
+	height: 15px;
+	top: 4px;
+	border-radius: 0 0 5px 5px;
+}
+
+
+.onderkant {
+	position: fixed;
+	display: block;
+	z-index: 998;
+	height: 7px;
+	width: 130px;
+	left: 380px;
+	bottom: 150px;
+	background-color: rgb(169, 87, 18);
+	border: 0;
+}
+
+.binnenkant {
+	position: fixed;
+	display: block;
+	z-index: 997;
+	height: 20px;
+	width: 133px;
+	left: 759px;
+	bottom: 157px;
+	background-color: rgb(240, 227, 192);
+	box-shadow: -2px -2px 10px rgb(223, 175, 121) inset;
+}
+
+.bovenkant {
+	position: fixed;
+	display: block;
+	z-index: 998;
+	height: 7px;
+	width: 130px;
+	left: 630px;
+	bottom: 150px;
+	background-color: rgb(169, 87, 18);
+}
+
+.ending {
+	position: fixed;
+	display: block;
+	z-index: 999;
+	top: 50px;
+	text-align: center;
+	top: 160px;
+	left: 200px;
+}
+
+footer {
+	position: fixed;
+	display: block;
+	z-index: 999;
+	left: 550px;
+	text-transform: uppercase;
+	font-size: 10px;
+	letter-spacing: 2px;
+	color: white;
+}
